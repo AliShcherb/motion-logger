@@ -3,23 +3,20 @@
 .idea/
 **/*~
 
-# Mac OSX temporary files
-.DS_Store
-**/.DS_Store
+# Python
+*.pyc
+__pycache__/
 
-# dfx temporary files
+# Logs
+motion_watcher/logs/*.log
+
+# Env
+motion_watcher/.env
+
+# DFX
+.canister_ids.json
+dfx.json
 .dfx/
 
-# generated files
-**/declarations/
-
-# rust
-target/
-
-# frontend code
-node_modules/
-dist/
-.svelte-kit/
-
-# environment variables
-.env
+# macOS
+.DS_Store
